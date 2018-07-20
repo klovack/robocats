@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff2f2+0,c1c1c1+100 */
+  background: #fff2f2; /* Old browsers */
+  background: -moz-linear-gradient(top, #fff2f2 0%, #c1c1c1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fff2f2 0%,#c1c1c1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fff2f2 0%,#c1c1c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2f2', endColorstr='#c1c1c1',GradientType=0 ); /* IE6-9 */
+  min-height: 100vh;
+}

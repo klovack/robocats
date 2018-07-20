@@ -1,0 +1,22 @@
+.search-box {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(255, 172, 142, 0.384);
+    transition: border 300ms ease-in-out;
+    background: transparent;
+}
+
+.search-input:focus, .search-input:active {
+    outline: none;
+    border-bottom-color: rgb(255, 172, 142);
+    border-top-color: rgb(255, 172, 142);
+}
+
+.search-input::placeholder {
+    color: rgb(255, 172, 142);
+}
