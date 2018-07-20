@@ -9,6 +9,7 @@
     border-bottom-color: rgba(255, 172, 142, 0.384);
     transition: border 300ms ease-in-out;
     background: transparent;
+    border-radius: 0;
 }
 
 .search-input:focus, .search-input:active {
