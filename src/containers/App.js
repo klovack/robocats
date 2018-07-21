@@ -5,6 +5,7 @@ import SearchBox from '../components/SearchBox';
 import CardList from '../components/CardList';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Header from '../components/Header';
 
 import { setSearchField, fetchRobots } from '../actions';
 
@@ -25,6 +26,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return { 
         onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+
+        // Why we pass dispatch here
+        // componentDidMount -- will call --> onFetchChange --> fetchRobots (make API call)
+        // --> fetchRobots (call dispatch function based on the respond)
         onFetchRobots: () => fetchRobots(dispatch)
     };
 };
@@ -43,7 +48,7 @@ class App extends Component {
         if (!isPending) {
             return(
                 <div className="container tc">
-                    <h1 className="page-title">RoboCats</h1>
+                    <Header />
                     <SearchBox searchChange={onSearchChange}/>
                     <Scroll>
                         <ErrorBoundary>
