@@ -3,7 +3,6 @@ import Card from './Card';
 import './CardList.css';
 
 const CardList = ({ robots }) => {
-    console.log('CardList');
     return (
         <div className="card-list">
             {
