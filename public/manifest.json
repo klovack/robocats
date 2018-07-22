@@ -26,5 +26,5 @@
     "theme_color": "#ffac8e",
     "background_color": "#ffac8e",
     "display": "standalone",
-    "start_url": "/robocats"
+    "start_url": "./index.html"
 }
