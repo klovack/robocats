@@ -6,6 +6,7 @@ const SearchBox = ({ searchField, searchChange }) => {
     return (
         <div className="search-box">
             <input 
+                aria-label="Filter RoboCats"
                 className='search-input'
                 type='search'
                 placeholder='Search robot'
